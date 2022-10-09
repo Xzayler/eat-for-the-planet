@@ -1,0 +1,149 @@
+body {
+  font-family: Mulish, sans-serif;
+  padding: 0;
+  margin: 0;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main > section, header {
+  padding: 0px clamp(1vw, 12vw, 14vw);
+}
+
+/* HEADER */
+
+header, .hero, footer{
+  background-color: #1F3729;
+  color: #F9FAF8;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 24px;
+}
+
+ul{
+  list-style-type: none;
+  padding:0;
+  font-size: 18px;
+}
+
+ul li {
+  display:inline-block;
+  margin: 0px 8px;
+  font-size: 18px;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 98px;
+}
+
+.hero-content > h1 {
+  margin: 0;
+  padding: 0px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+button {
+  background-color: #1c9e3d;
+  border: 0px solid #F9FAF8;
+  border-radius: 8px;
+  margin: auto 0px;
+  
+  color: #F9FAF8;
+  font-size: 18px;
+
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #F9FAF8;
+  color: #1c9e3d;
+}
+
+.hero > figure {
+  min-width: 300px;
+  border: 1px solid black;
+}
+
+/* INFO SECTION */
+
+.content {
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 4vh;
+  align-self: center;
+}
+
+.card {
+  border: 1px dotted black;
+  max-width: 100px;
+}
+
+/* QUOTE */
+
+.quote {
+  background-color: #E6E7EB;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937;
+  padding: 98px;
+}
+
+.author {
+  text-align: end;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* CTA */
+
+.cta {
+  background-color: #1c9e3d;
+  margin: 98px 0px;
+  border-radius: 16px;
+  padding: 64px;
+
+  color: #F9FAF8;
+  font-weight: 800;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+.cta > button {
+  border: 2px solid #F9FAF8;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 10px;
+  margin-top: auto;
+}
