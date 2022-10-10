@@ -28,8 +28,9 @@ header {
 }
 
 header > img {
-  height: 80px;
+  height: auto;
   margin: 12px 0px;
+  max-width: 40%;
 }
 
 ul{
@@ -51,16 +52,32 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  column-gap: 4%;
+  row-gap: 32px;
   
   padding-top: 98px;
   padding-bottom: 98px;
 }
 
-.hero-content > h1 {
-  margin: 0;
-  padding: 0px;
-  font-size: 48px;
-  font-weight: 800;
+.hero-content {
+  flex: 1 0 32%;
+  min-width: 160px;
+}
+
+.hero > figure {
+  text-align: center;
+  margin: 0px;
+  font-size: 18px;
+  flex: 1 0 64%;
+}
+
+.hero > figure > img {
+  width: 100%;
+}
+
+.hero > figure > figcaption {
+  margin-bottom: 12px;
 }
 
 button {
