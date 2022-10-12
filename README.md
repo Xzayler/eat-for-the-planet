@@ -1,6 +1,6 @@
 # Eat for the planet
 
-<b>This is my landing page project for The Odin Project<b>
+<b>This is my landing page project for The Odin Project</b>
 
 A simple concept page with an evironmental theme, specifically focusing on our diet and its impact on the planet and its species. The language is hungarian.
 
