@@ -225,3 +225,23 @@ footer {
   font-size: 10px;
   margin-top: auto;
 }
+
+footer > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  line-height: auto;
+}
+
+
+.footer-strong {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+footer a {
+  color: #F9FAF8;
+}
