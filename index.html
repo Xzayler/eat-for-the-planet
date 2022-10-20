@@ -33,7 +33,7 @@
         <button type="button" onclick="window.location.href='https://ourworldindata.org/land-use-diets';">Olvass Tovább</button>
       </div>
       <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NgYGsyh23RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src ="" width="560" height="315" data-src="https://www.youtube.com/embed/NgYGsyh23RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         <p>Díjnyertes dokumentumfilm</p>
         <p>Cowspiracy: A fenntarthatóság titka</p>
       </div>
@@ -106,6 +106,16 @@
         Produce icon by <a href="https://www.flaticon.com/free-icons/produce" title="produce icons">Flat Icons - Flaticon</a>
       </p>
     </div>
+    <script>
+      function init() {
+        var vidDefer = document.getElementsByTagName('iframe');
+        for (var i=0; i<vidDefer.length; i++) {
+          if(vidDefer[i].getAttribute('data-src')) {
+            vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+          }
+        }
+      }
+      window.onload = init;</script>
   </footer>
 
 </body>
