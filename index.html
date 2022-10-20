@@ -9,6 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,800;1,200&display=swap" rel="stylesheet">
+  <script defer>
+    function init() {
+      var vidDefer = document.getElementsByTagName('iframe');
+      for (var i=0; i<vidDefer.length; i++) {
+        if(vidDefer[i].getAttribute('data-src')) {
+          vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+        }
+      }
+    }
+    window.onload = init;
+  </script>
 </head>
 
 <body>
@@ -106,16 +117,6 @@
         Produce icon by <a href="https://www.flaticon.com/free-icons/produce" title="produce icons">Flat Icons - Flaticon</a>
       </p>
     </div>
-    <script>
-      function init() {
-        var vidDefer = document.getElementsByTagName('iframe');
-        for (var i=0; i<vidDefer.length; i++) {
-          if(vidDefer[i].getAttribute('data-src')) {
-            vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-          }
-        }
-      }
-      window.onload = init;</script>
   </footer>
 
 </body>
